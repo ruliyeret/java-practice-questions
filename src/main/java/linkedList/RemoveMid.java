@@ -1,12 +1,14 @@
 package linkedList;
 
+import static linkedList.LinkedList.printList;
+
 public class RemoveMid {
 
-    public static void removeMid(LinkedList.Node node){
+    public static void removeMid(Node node){
 
-        LinkedList.Node slow = node;
-        LinkedList.Node fast = node;
-        LinkedList.Node prev = null;
+        Node slow = node;
+        Node fast = node;
+        Node prev = null;
 
         if(node == null && node.next == null) {
             System.out.println("There is not middle element in the list");
@@ -25,16 +27,16 @@ public class RemoveMid {
     public static void main(String[] args){
         LinkedList linkedList = new LinkedList();
 
-        linkedList.head = new LinkedList.Node(10);
-        linkedList.head.next = new LinkedList.Node(11);
-        linkedList.head.next.next = new LinkedList.Node(12);
-        linkedList.head.next.next.next = new LinkedList.Node(13);
-        linkedList.head.next.next.next.next = new LinkedList.Node(14);
+        linkedList.head = new Node(10);
+        linkedList.head.next = new Node(11);
+        linkedList.head.next.next = new Node(12);
+        linkedList.head.next.next.next = new Node(13);
+        linkedList.head.next.next.next.next = new Node(14);
 
         System.out.println("Before removed the mid element");
-        LinkedList.printList(linkedList);
+        printList(linkedList);
         removeMid(linkedList.head);
         System.out.println("After removed the mid element");
-        LinkedList.printList(linkedList);
+        printList(linkedList);
     }
 }

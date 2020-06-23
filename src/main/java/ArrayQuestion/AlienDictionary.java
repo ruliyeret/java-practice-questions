@@ -38,5 +38,5 @@ public class AlienDictionary {
 
        isAlienSorted(words, order);
 
-    }
+     }
 }

@@ -1,17 +1,13 @@
 package linkedList;
 
+import javax.swing.*;
+
 public class LinkedList {
 
     public  Node head;
 
-    public static class Node {
-        int data;
-        Node next;
-
-        public Node(int data){
-            this.data = data;
-            this.next = null;
-        }
+    public LinkedList(){
+        this.head = new Node();
     }
 
     static void printList(LinkedList linkedList)

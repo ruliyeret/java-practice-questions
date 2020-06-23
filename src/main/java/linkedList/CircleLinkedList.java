@@ -2,9 +2,9 @@ package linkedList;
 
 public class CircleLinkedList {
 
-    public static boolean isLinkedListCircle(LinkedList.Node head) {
-        LinkedList.Node slow = head;
-        LinkedList.Node fast = head.next;
+    public static boolean isLinkedListCircle(Node head) {
+        Node slow = head;
+        Node fast = head.next;
 
         while (fast != null && fast.next != null  && slow != fast) {
             slow = slow.next;
@@ -17,10 +17,10 @@ public class CircleLinkedList {
 
     public static void main(String[] args){
 
-        LinkedList.Node node1 = new LinkedList.Node(6);
-        LinkedList.Node node2 = new LinkedList.Node(7);
-        LinkedList.Node node3 = new LinkedList.Node(8);
-        LinkedList.Node node4 = new LinkedList.Node(9);
+        Node node1 = new Node(6);
+        Node node2 = new Node(7);
+        Node node3 = new Node(8);
+        Node node4 = new Node(9);
         LinkedList linkedList = new LinkedList();
         linkedList.head = node1;
         linkedList.head.next = node2;
