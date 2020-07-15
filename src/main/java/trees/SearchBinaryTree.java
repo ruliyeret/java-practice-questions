@@ -24,7 +24,7 @@ public class SearchBinaryTree {
         if(root.val == val){
             return root;
         }else if(root.val > val){
-          return searchBST(root.left, val);
+          return   searchBST(root.left, val);
         }
          return searchBST(root.right, val);
     }
@@ -38,6 +38,9 @@ public class SearchBinaryTree {
 
         TreeNode t = searchBST(treeNode, 2);
         System.out.println(t.val);
+
+
+
 
     }
 }

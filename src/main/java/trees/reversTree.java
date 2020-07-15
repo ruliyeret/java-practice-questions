@@ -30,6 +30,7 @@ public class reversTree {
         Node node = new Node(2);
         node.right = new Node(4);
         node.left = new Node(5);
+
         System.out.print("Before reversing: ");
         print(node);
         reversTree(node);
